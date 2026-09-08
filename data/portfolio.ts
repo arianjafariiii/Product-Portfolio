@@ -62,6 +62,7 @@ export const projects: Project[] = [
       'Researched AI and AI-agent products to understand trends, user needs, and positioning opportunities',
       'Translated feedback into weekly workflow coordination and content/product experimentation',
       'Mapped the operational requirements for personalized outreach, sender rotation, follow-up timing, and reply handling',
+      'Created a content ideation and prioritization sheet that made approval status, publishing format, ownership, and priority visible to the team',
       'Used Notion, ClickUp, HubSpot, Google Sheets, and Google Docs to manage research and execution workflows',
     ],
     insights: [
@@ -73,6 +74,7 @@ export const projects: Project[] = [
       'Proposed interview-based content featuring AI company CEOs to create educational resource value and an organic thought-leadership channel.',
       'Built an n8n outreach system that used 4–5 sender inboxes to deliver campaign batches of 20 personalized emails from Apollo contact data.',
       'Automated two follow-ups at three- and four-day intervals, with Gmail reply detection and contact-state updates that stopped further outreach once a recipient replied.',
+      'Set up an early task-assignment and content-production tracker before the team moved its workflows into Notion and Trello.',
       'Used audience and content signal to inform new content/product concepts and improve decision quality over time.',
     ],
     outcome: 'The work strengthened the product and growth strategy by turning audience feedback and market research into a more structured content and experimentation workflow.',
