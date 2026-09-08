@@ -1,0 +1,14 @@
+import Image from 'next/image';
+import { skills } from '@/data/portfolio';
+
+export default function AboutPage() {
+  return <main className="container-shell py-14 sm:py-20">
+    <section className="grid gap-12 lg:grid-cols-[.88fr_1.12fr] lg:items-start">
+      <div className="relative mx-auto w-full max-w-md"><div className="absolute -left-3 -top-3 h-full w-full rounded-[1.75rem] bg-[var(--accent)]" /><div className="relative aspect-[.8] overflow-hidden rounded-[1.75rem]"><Image src="/images/arian-jafari.jpg" alt="Arian Jafari" fill sizes="(max-width: 1024px) 90vw, 420px" className="object-cover object-[50%_35%] grayscale-[.15]" /></div></div>
+      <div><p className="eyebrow">About / Product researcher</p><h1 className="mt-5 max-w-3xl text-5xl font-semibold leading-[.92] tracking-[-.07em] text-[var(--ink)] sm:text-7xl">Curious about what moves people — and products.</h1><div className="mt-8 max-w-2xl space-y-5 text-lg leading-8 text-[var(--ink-muted)]"><p>I have a Computer Science background from the University of Isfahan and became deeply interested in product development through Human–Computer Interaction and startup business development.</p><p>My work sits at the intersection of product research, competitive intelligence, market research, product strategy, AI, and early-stage business development.</p><p>I enjoy mapping a messy landscape, finding the useful pattern, and turning it into a clear next decision.</p></div><div className="mt-10 grid gap-px overflow-hidden rounded-2xl border border-[var(--line)] bg-[var(--line)] sm:grid-cols-2"><div className="bg-[var(--card)] p-5"><p className="section-label">Education</p><p className="mt-3 text-xl font-semibold tracking-[-.04em] text-[var(--ink)]">University of Isfahan</p><p className="mt-2 text-sm text-[var(--ink-muted)]">B.Sc. Computer Science · 2021–2025</p></div><div className="bg-[var(--ink)] p-5 text-white"><p className="section-label text-[#c5e86c]">Working from</p><p className="mt-3 text-xl font-semibold tracking-[-.04em]">Isfahan, Iran</p><p className="mt-2 text-sm text-white/60">Available for considered product work.</p></div></div></div>
+    </section>
+    <section className="mt-20 border-t border-[var(--line)] pt-12"><p className="eyebrow">Capabilities</p><div className="mt-6 grid gap-8 lg:grid-cols-2"><SkillGroup title="Product & strategy" skills={skills.strategy} /><SkillGroup title="Research & analytics" skills={skills.research} /></div></section>
+  </main>;
+}
+
+function SkillGroup({ title, skills: items }: { title: string; skills: string[] }) { return <div className="card-surface p-7"><h2 className="text-2xl font-semibold tracking-[-.045em] text-[var(--ink)]">{title}</h2><div className="mt-6 flex flex-wrap gap-2">{items.map((skill) => <span key={skill} className="rounded-full border border-[var(--line)] px-3 py-1.5 text-xs font-medium text-[var(--ink-muted)]">{skill}</span>)}</div></div>; }
