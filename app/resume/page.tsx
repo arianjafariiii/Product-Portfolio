@@ -4,7 +4,7 @@ import { siteConfig } from '@/data/portfolio';
 const experience = [
   ['Benoa', 'Startup Business Development / Product Strategy', 'Conducted customer discovery, competitor analysis, value proposition design, business model development, and strategy work centered on family digital wellness and healthier product positioning.'],
   ['Habit Creator', 'Product Research / HCI', 'Analyzed user behavior, habit motivation patterns, and product friction to inform problem framing, feature prioritization, and prototype direction.'],
-  ['MatinTouch', 'Co-Founder — Product & Technology', 'Applied market research and competitor analysis to improve website strategy, positioning, product-page communication, and digital growth foundations.'],
+  ['MatinTouch', 'Product Strategy & Market Intelligence Lead', 'Applied market research and competitor analysis to improve website strategy, positioning, product-page communication, and digital growth foundations.'],
 ];
 
 export default function ResumePage() {
