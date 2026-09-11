@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://example.com/sitemap.xml',
-    host: 'https://example.com',
+    sitemap: 'https://product-portfolio-rho-three.vercel.app/sitemap.xml',
+    host: 'https://product-portfolio-rho-three.vercel.app',
   };
 }

@@ -4,14 +4,31 @@ import './globals.css';
 import { SiteFooter, SiteHeader } from '@/app/components/site-chrome';
 import { siteConfig } from '@/data/portfolio';
 
+const siteUrl = 'https://product-portfolio-rho-three.vercel.app';
+const socialDescription = 'Selected work across product research, competitive intelligence, AI product strategy, product marketing, workflow automation, and B2B digital growth.';
+const socialImage = `${siteUrl}/images/social/arian-jafari-og.png`;
+
 export const metadata: Metadata = {
-  metadataBase: new URL('https://example.com'),
-  title: { default: `${siteConfig.name} | Product Research & Strategy`, template: `%s | ${siteConfig.name}` },
-  description: 'Product-focused professional working across competitive research, user research, market analysis, product discovery, and early-stage business development.',
+  metadataBase: new URL(siteUrl),
+  title: { default: 'Arian Jafari | Product Research & Strategy', template: `%s | ${siteConfig.name}` },
+  description: socialDescription,
   keywords: siteConfig.seoKeywords,
-  openGraph: { title: `${siteConfig.name} | Product Research & Strategy`, description: 'Research → Insight → Product Decision → Execution', url: 'https://example.com', siteName: siteConfig.name, locale: 'en_US', type: 'website' },
-  twitter: { card: 'summary_large_image', title: `${siteConfig.name} | Product Research & Strategy`, description: 'Product-focused professional working across competitive research, user research, market analysis, product discovery, and early-stage business development.' },
-  alternates: { canonical: 'https://example.com' },
+  openGraph: {
+    title: 'Arian Jafari | Product Research & Strategy',
+    description: socialDescription,
+    url: siteUrl,
+    siteName: siteConfig.name,
+    locale: 'en_US',
+    type: 'website',
+    images: [{ url: socialImage, width: 1200, height: 630, alt: 'Arian Jafari product research and strategy portfolio' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Arian Jafari | Product Research & Strategy',
+    description: socialDescription,
+    images: [socialImage],
+  },
+  alternates: { canonical: siteUrl },
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
